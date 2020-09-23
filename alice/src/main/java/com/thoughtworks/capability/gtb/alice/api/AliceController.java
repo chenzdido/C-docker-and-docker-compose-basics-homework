@@ -11,6 +11,6 @@ public class AliceController {
 
     @GetMapping("/hello")
     public String hello() {
-       return restTemplate.getForEntity("http://localhost:8081/hello",String.class).getBody();
+       return restTemplate.getForEntity("http://bob:8081/hello",String.class).getBody();
     }
 }
